@@ -17,6 +17,8 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+/* ---------- HEADER ---------- */
+
 header {
   padding: 100px 30px 80px;
   text-align: center;
@@ -26,7 +28,7 @@ h1 {
   font-family: 'Cormorant Garamond', serif;
   font-size: 46px;
   letter-spacing: 4px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 h1 span {
@@ -34,23 +36,25 @@ h1 span {
 }
 
 header p {
-  max-width: 620px;
+  max-width: 640px;
   margin: auto;
   font-size: 15px;
   line-height: 2;
   color: #d4d0ca;
 }
 
+/* ---------- SECTIONS ---------- */
+
 section {
   max-width: 1000px;
   margin: auto;
-  padding: 80px 40px;
+  padding: 70px 40px;
 }
 
 .image-box {
   display: flex;
   justify-content: center;
-  margin: 60px 0;
+  margin: 50px 0;
 }
 
 .image-box img {
@@ -61,8 +65,10 @@ section {
   filter: brightness(0.95);
 }
 
+/* ---------- TEXT ---------- */
+
 .text {
-  max-width: 700px;
+  max-width: 720px;
   margin: auto;
   text-align: center;
 }
@@ -79,6 +85,8 @@ section {
   color: #d1ccc6;
   margin-bottom: 24px;
 }
+
+/* ---------- CTA ---------- */
 
 .cta {
   text-align: center;
@@ -100,6 +108,72 @@ section {
   color: #0a0a0a;
 }
 
+/* ---------- FOOTER ---------- */
+
 footer {
   text-align: center;
-  padd
+  padding: 60px 20px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #777;
+}
+
+/* ---------- RESPONSIVO ---------- */
+
+@media (max-width: 600px) {
+  .image-box img {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1><span>FORMAÇÃO</span> PRIVADA</h1>
+  <p>
+    Este não é um curso para aprender unhas.<br>
+    É uma formação para aprender a **ser bem paga**.
+  </p>
+</header>
+
+<section>
+  <div class="image-box">
+    <img src="imagens/nails2.jpg.jpeg">
+  </div>
+
+  <div class="text">
+    <h2>Por que esta formação existe</h2>
+
+    <p>
+      A maioria das profissionais domina a técnica,<br>
+      mas continua presa a preços baixos e agendas cheias.
+    </p>
+
+    <p>
+      Aqui você aprende a transformar técnica em posicionamento,<br>
+      posicionamento em autoridade,<br>
+      e autoridade em **lucro previsível**.
+    </p>
+
+    <p>
+      Não é sobre fazer mais.<br>
+      É sobre cobrar melhor.
+    </p>
+  </div>
+
+  <div class="cta">
+    <a class="btn" href="https://wa.me/55SEUNUMERO">
+      SOLICITAR INFORMAÇÕES
+    </a>
+  </div>
+</section>
+
+<footer>
+  © Kauana Zuse · Formação Privada
+</footer>
+
+</body>
+</html>
