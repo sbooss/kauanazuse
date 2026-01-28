@@ -8,16 +8,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
   background: #0a0a0a;
   color: #e9e6e2;
   font-family: 'Montserrat', sans-serif;
-  -webkit-font-smoothing: antialiased;
 }
 
 /* ---------- HEADER ---------- */
@@ -70,7 +67,6 @@ header p {
   font-size: 14px;
   line-height: 2;
   color: #d4d0ca;
-  margin: 0;
 }
 
 .buttons {
@@ -99,17 +95,17 @@ header p {
 section {
   max-width: 1200px;
   margin: auto;
-  padding: 90px 40px;
+  padding: 80px 40px;
 }
 
 section h3 {
   font-family: 'Cormorant Garamond', serif;
   font-size: 36px;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
   text-align: center;
 }
 
-/* ---------- GALLERY (IMAGENS IGUAIS) ---------- */
+/* ---------- GALLERY ---------- */
 
 .gallery {
   display: grid;
@@ -117,12 +113,31 @@ section h3 {
   gap: 24px;
 }
 
-.gallery img {
+.card {
+  position: relative;
   width: 100%;
-  height: 360px;          /* 🔒 todas iguais */
-  object-fit: cover;     /* 🔒 sem distorção */
+  height: 360px;
   border-radius: 16px;
-  filter: brightness(0.95);
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.9);
+}
+
+.card span {
+  position: absolute;
+  bottom: 18px;
+  left: 18px;
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #e9e6e2;
+  background: rgba(0,0,0,0.5);
+  padding: 6px 10px;
+  border: 1px solid #c8a24a;
 }
 
 /* ---------- SIGNATURE ---------- */
@@ -141,7 +156,7 @@ section h3 {
 
 footer {
   text-align: center;
-  padding: 60px 20px;
+  padding: 50px 20px;
   font-size: 11px;
   letter-spacing: 2px;
   color: #777;
@@ -174,30 +189,47 @@ footer {
   <h2>DESIGNER NAILS</h2>
 
   <p>
-    Serviço privado para mulheres que valorizam<br>
-    estética, discrição e excelência.
+    Atendimento autoral e exclusivo<br>
+    para mulheres que valorizam excelência.
   </p>
 
   <div class="buttons">
     <a class="btn" href="https://wa.me/55SEUNUMERO">AGENDAR</a>
     <a class="btn" href="https://instagram.com/SEUINSTAGRAM" target="_blank">INSTAGRAM</a>
+    <a class="btn" href="curso.html">FORMAÇÃO PRIVADA</a>
   </div>
 </header>
 
 <section>
-  <h3>Trabalhos selecionados</h3>
+  <h3>Trabalhos autorais</h3>
+
   <div class="gallery">
-    <img src="imagens/nails1.jpg.jpeg">
-    <img src="imagens/nails2.jpg.jpeg">
-    <img src="imagens/nails3.jpg.jpeg">
-    <img src="imagens/nails4.jpg.jpeg">
+    <div class="card">
+      <img src="imagens/nails1.jpg.jpeg">
+      <span>TRABALHO AUTORAL</span>
+    </div>
+
+    <div class="card">
+      <img src="imagens/nails2.jpg.jpeg">
+      <span>TRABALHO AUTORAL</span>
+    </div>
+
+    <div class="card">
+      <img src="imagens/nails3.jpg.jpeg">
+      <span>TRABALHO AUTORAL</span>
+    </div>
+
+    <div class="card">
+      <img src="imagens/nails4.jpg.jpeg">
+      <span>TRABALHO AUTORAL</span>
+    </div>
   </div>
 </section>
 
 <section>
   <div class="signature">
-    Luxo verdadeiro não chama atenção.<br>
-    Ele se impõe em silêncio.
+    Luxo verdadeiro não se explica.<br>
+    Ele é reconhecido.
   </div>
 </section>
 
